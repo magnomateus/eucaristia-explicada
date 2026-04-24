@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6b1e2e"/>
+      <stop offset="100%" stop-color="#3d1218"/>
+    </linearGradient>
+    <linearGradient id="gold5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8c547"/>
+      <stop offset="100%" stop-color="#b8891a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="16" fill="url(#bg5)"/>
+  <rect x="16" y="16" width="368" height="368" rx="12" fill="none" stroke="url(#gold5)" stroke-width="2" opacity="0.5"/>
+  <text x="200" y="88" font-family="Georgia, serif" font-size="24" fill="url(#gold5)" text-anchor="middle" font-weight="bold" letter-spacing="3">BÔNUS 05</text>
+  <circle cx="200" cy="170" r="45" fill="none" stroke="url(#gold5)" stroke-width="2"/>
+  <text x="200" y="185" font-family="Georgia, serif" font-size="50" fill="url(#gold5)" text-anchor="middle">✝</text>
+  <text x="200" y="245" font-family="Georgia, serif" font-size="26" fill="#fff" text-anchor="middle" font-weight="bold">7 Promessas</text>
+  <text x="200" y="278" font-family="Georgia, serif" font-size="22" fill="#fff" text-anchor="middle">de Jesus</text>
+  <text x="200" y="308" font-family="Georgia, serif" font-size="22" fill="#fff" text-anchor="middle">na Eucaristia</text>
+  <line x1="120" y1="340" x2="280" y2="340" stroke="url(#gold5)" stroke-width="1"/>
+  <text x="200" y="370" font-family="Georgia, serif" font-size="14" fill="url(#gold5)" text-anchor="middle" letter-spacing="2">MILAGRE EUCARÍSTICO</text>
+</svg>
