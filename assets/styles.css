@@ -1,6 +1,6 @@
 /* ==========================================================================
    MILAGRE EUCARÍSTICO - LANDING PAGE
-   Design elegante com paleta eucarística (dourado ostensório, bordô profundo, creme)
+   Paleta Azul Marial celeste (azul profundo, marfim, dourado sutil)
    ========================================================================== */
 
 /* ==========================================================================
@@ -45,14 +45,26 @@ a {
    ========================================================================== */
 
 :root {
-    /* Paleta Milagre Eucarístico (dourado ostensório + bordô profundo) */
-    --gold: #d4af37;
-    --gold-light: #e8c547;
-    --gold-dark: #b8891a;
-    --wine: #6b1e2e;
-    --wine-dark: #3d1218;
-    --cream: #faf6ed;
-    --cream-dark: #f0e9d9;
+    /* Paleta Milagre Eucarístico — Azul Marial + Marfim + Dourado sutil */
+    --blue: #1e3a6b;
+    --blue-light: #2c528f;
+    --blue-dark: #102244;
+    --blue-deep: #0a162e;
+    --gold: #c9a961;
+    --gold-light: #c9a961;
+    --gold-dark: #8f7838;
+    --cream: #f7f4eb;
+    --cream-dark: #ebe5d6;
+    --ivory: #fbf9f2;
+
+    /* CTA — dourado mostarda sólido (referência: estilo Missa Explicada) */
+    --cta: #c9a227;
+    --cta-dark: #a68521;
+    --cta-deep: #8a6d1a;
+
+    /* Aliases de compatibilidade — evita quebrar estilos internos */
+    --wine: var(--blue);
+    --wine-dark: var(--blue-dark);
 
     /* Cores de Texto */
     --text-dark: #2c2c2c;
@@ -131,20 +143,24 @@ a {
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: 58px;
+    font-size: clamp(1.4rem, 1.1rem + 3.8vw, 3.625rem);
     font-weight: 800;
     color: var(--text-dark);
     line-height: 1.2;
     margin-bottom: var(--space-md);
     padding: 0 var(--space-sm);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 .hero-title .highlight {
     color: var(--wine);
     display: block;
-    font-size: 40px;
+    font-size: clamp(1.1rem, 0.7rem + 2.9vw, 2.85rem);
     font-weight: 600;
     margin-top: 12px;
+    line-height: 1.3;
 }
 
 .hero-subtitle {
@@ -185,9 +201,10 @@ a {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+    background: var(--cta);
     color: var(--text-white);
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.45);
+    box-shadow: 0 4px 15px rgba(201, 162, 39, 0.4);
+    border: 2px solid var(--cta-deep);
 }
 
 .btn-cta, .btn-cta-main, .btn-cta-final {
@@ -197,9 +214,10 @@ a {
 
 @media (hover: hover) and (pointer: fine) {
     .btn-primary:hover {
-        background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold) 100%);
+        background: var(--cta-dark);
+        color: var(--text-white);
         transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(212, 175, 55, 0.55);
+        box-shadow: 0 8px 25px rgba(201, 162, 39, 0.5);
     }
 }
 
@@ -959,7 +977,7 @@ a {
     gap: var(--space-sm);
     margin: var(--space-md) 0;
     padding: var(--space-sm);
-    background: rgba(107, 30, 46, 0.05);
+    background: rgba(30, 58, 107, 0.05);
     border-radius: 10px;
 }
 
@@ -1195,13 +1213,11 @@ a {
     }
 
     .hero-title {
-        font-size: 42px;
         line-height: 1.25;
         padding: 0 var(--space-xs);
     }
 
     .hero-title .highlight {
-        font-size: 28px;
         margin-top: 8px;
     }
 
@@ -1250,14 +1266,6 @@ a {
 }
 
 @media (max-width: 600px) {
-    .hero-title {
-        font-size: 36px;
-    }
-
-    .hero-title .highlight {
-        font-size: 26px;
-    }
-
     .hero-subtitle {
         font-size: 1.1rem;
     }
@@ -1274,14 +1282,12 @@ a {
     }
 
     .hero-title {
-        font-size: 30px;
         line-height: 1.3;
-        padding: 0;
+        padding: 0 var(--space-xs);
         margin-bottom: var(--space-sm);
     }
 
     .hero-title .highlight {
-        font-size: 20px;
         margin-top: 6px;
     }
 

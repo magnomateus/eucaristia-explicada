@@ -248,11 +248,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log(
         '%c✝️ Milagre Eucarístico',
-        'font-size: 20px; font-weight: bold; color: #6b1e2e;'
+        'font-size: 20px; font-weight: bold; color: #1e3a6b;'
     );
     console.log(
         '%cLanding Page carregada com sucesso!',
-        'font-size: 14px; color: #d4af37;'
+        'font-size: 14px; color: #c9a961;'
     );
     console.log('✝️ Que Deus abençoe!');
 
