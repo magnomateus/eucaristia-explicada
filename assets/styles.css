@@ -136,7 +136,7 @@ a {
    ========================================================================== */
 
 .hero {
-    background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+    background: #bae6fd;
     padding: var(--space-xl) 0;
     text-align: center;
 }
